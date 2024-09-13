@@ -10,9 +10,11 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home')
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <section
@@ -86,6 +88,10 @@ export default function Intro() {
           hover:scale-110 hover:bg-gray-950 
           active:scale-105
           transition'
+          onClick={() => {
+            setActiveSection('Contact')
+            setTimeOfLastClick(Date.now())
+          }}
         >
           Contact me here
           <BsArrowRight
@@ -99,7 +105,7 @@ export default function Intro() {
           hover:scale-110 
           active:scale-105
           transition cursor-pointer 
-          border border-black/10'
+          borderBlack dark:bg-white/10'
           href='/piyush_resume.pdf'
           download
         >
@@ -115,7 +121,7 @@ export default function Intro() {
           hover:scale-[1.15] hover:text-gray-950 
           active:scale-105
           transition cursor-pointer 
-          border border-black/10'
+          borderBlack dark:bg-white/10 dark:text-white/60'
           href='https://www.linkedin.com/in/piyush-dhamecha-85640a37/'
           target='_blank'
         >
@@ -128,7 +134,7 @@ export default function Intro() {
           hover:scale-[1.15] hover:text-gray-950 
           active:scale-105
           transition cursor-pointer 
-          border border-black/10'
+          borderBlack dark:bg-white/10 dark:text-white/60'
           href='https://github.com/piyushdhamecha'
           target='_blank'
         >
