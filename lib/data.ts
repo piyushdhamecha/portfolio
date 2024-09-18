@@ -1,11 +1,35 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import {
+  FaCss3,
+  FaGitAlt,
+  FaHtml5,
+  FaNodeJs,
+  FaReact
+} from "react-icons/fa";
+import {
+  SiApollographql,
+  SiExpress,
+  SiFramer,
+  SiGraphql,
+  SiJavascript,
+  SiMongodb,
+  SiPostgresql,
+  SiPrisma,
+  SiRedux,
+  SiTypescript
+} from "react-icons/si";
+import { RiNextjsLine } from "react-icons/ri";
+import { BiLogoTailwindCss } from "react-icons/bi";
+
 import spreaddImage from "@/public/spreadd.png";
 import publicPoll from "@/public/public-poll.png";
 import finCast from "@/public/fin-cast.png";
 import weatherApp from "@/public/weather-app.png";
+
+import blossomLogo from '@/public/blossom_educational_logo.png'
+import ghplLogo from '@/public/gowrie_healthcare_private_ltd_logo.png'
+import heckylLogo from '@/public/heckyl_logo.png'
+import comtekLogo from '@/public/comtek_logo.png'
+
 
 export const links = [
   {
@@ -36,28 +60,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    title: "Team leader (Front-end)",
+    company: "Blossom educational",
+    icon: blossomLogo,
+    location: "Remote",
+    description: "Actively Participate in full life cycle of UI development including transfers from requirement to architecture, high and low level design.",
+    date: "June 2019 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    title: "Senior Front-end Developer",
+    company: "Gowrie Healthcare Pvt Ltd",
+    icon: ghplLogo,
+    location: "Vadodara (Gujarat)",
+    description: "Develop new products, troubleshoot software issues, and research critical problem. Participate in the development of several major software releases.",
+    date: "October 2017 - May 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    title: "Software Architect",
+    company: "Heckyl Technologies",
+    icon: heckylLogo,
+    location: "Mumbai (Maharashtra)",
+    description: "Actively Participate in full life cycle of UI development including transfers from requirement to architecture, high and low level design, and implementation.",
+    date: "June 2016 - October 2017",
+  },
+  {
+    title: "Senior Software Developer",
+    company: "Comtek Software Systems",
+    icon: comtekLogo,
+    location: "Mumbai (Maharashtra)",
+    description: "Coordinate the integration testing for the Software TestTeam. Develop new products, troubleshoot software issues, and research critical problem. Participate in the development of several major software releases.",
+    date: "May 2005 - May 2016",
   },
 ] as const;
 
@@ -93,21 +125,21 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Framer Motion",
+  { icon: FaHtml5, skill: "HTML", },
+  { icon: FaCss3, skill: "CSS", },
+  { icon: SiJavascript, skill: "JavaScript", },
+  { icon: SiTypescript, skill: "TypeScript", },
+  { icon: FaReact, skill: "React", },
+  { icon: RiNextjsLine, skill: "Next.js", },
+  { icon: FaNodeJs, skill: "Node.js", },
+  { icon: FaGitAlt, skill: "Git" },
+  { icon: BiLogoTailwindCss, skill: "Tailwind", },
+  { icon: SiPrisma, skill: "Prisma", },
+  { icon: SiMongodb, skill: "MongoDB", },
+  { icon: SiRedux, skill: "Redux", },
+  { icon: SiGraphql, skill: "GraphQL", },
+  { icon: SiApollographql, skill: "Apollo", },
+  { icon: SiExpress, skill: "Express", },
+  { icon: SiPostgresql, skill: "PostgreSQL", },
+  { icon: SiFramer, skill: "Framer Motion", },
 ] as const;

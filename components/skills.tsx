@@ -33,10 +33,10 @@ export default function Skills() {
       <ul
         className='flex flex-wrap justify-center gap-2 text-gray-800'
       >
-        {skillsData.map((skill, index) => (
+        {skillsData.map(({ skill, icon: Icon }, index) => (
           <motion.li
             key={index}
-            className='bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white'
+            className='bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white flex gap-2 items-center justify-center'
             initial="initial"
             whileInView="animate"
             variants={fadeInAnimationVariant}
@@ -45,6 +45,7 @@ export default function Skills() {
             }}
             custom={index}
           >
+            <Icon size={12} />
             {skill}
           </motion.li>
         ))}
