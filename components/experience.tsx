@@ -65,16 +65,17 @@ export default function Experience() {
                   padding: "1.3rem 2rem",
                 }}
               >
-                <h3 className="font-semibold capitalize">{item.title}</h3>
-                <p className="!mt-1 !font-normal text-gray-500 dark:text-white/25">
-                  {item.description}
-                </p>
-                <p className="!font-normal !mt-2 flex items-baseline text-gray-400 !text-sm">
+                <h3 className="font-semibold capitalize !mb-1">{item.title}</h3>
+                <p className="!font-normal !m-0 !mb-2 flex items-baseline text-gray-400 !text-sm">
                   <FaBuilding size={12} className="mr-1 text-gray-500" />
                   {item.company}
                   <MdLocationPin size={12} className="ml-2 mr-0.5 text-gray-500" />
                   {item.location}
                 </p>
+                <p className="!mt-0 !font-normal text-gray-700 dark:text-white/25 !text-sm">
+                  {item.description}
+                </p>
+
               </VerticalTimelineElement>
             </React.Fragment>
           ))}

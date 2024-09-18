@@ -100,6 +100,7 @@ export const projectsData = [
       "Spreadd brings creators and brands closer together. I worked as a full-stack developer on this startup project for 1.5 years.",
     tags: ["React", "Redux", "Node.js", "Express.js", "Graphql", "Postgresql"],
     imageUrl: spreaddImage,
+    url: 'https://spreadd.io'
   },
   {
     title: "Public Poll",
@@ -107,6 +108,7 @@ export const projectsData = [
       "Next-gen digital democracy (Similar like social media). I worked as a full-stack developer on this startup project for 2 years.",
     tags: ["React", "Redux", "Node.js", "Express.js", "Postgresql"],
     imageUrl: publicPoll,
+    url: 'https://publicpoll.com'
   },
   {
     title: "FinCast",
@@ -114,6 +116,7 @@ export const projectsData = [
       "Financial forecasting mobile app. Predict the expenses upto 10 years based on the data entered by user.",
     tags: ["React Native", "Firebase", "Node.js", "Express", "MongoDb"],
     imageUrl: finCast,
+    url: 'https://play.google.com/store/apps/details?id=com.sasvat.fincast&hl=en-in&pli=1'
   },
   {
     title: "Weather App",
@@ -121,6 +124,7 @@ export const projectsData = [
       "Detailed weather statistics and predictions. Includes wind, map, pollution, etc.",
     tags: ["React", "Next.js", "Openweather api"],
     imageUrl: weatherApp,
+    url: 'https://weather-app-puce-pi.vercel.app/'
   },
 ] as const;
 
