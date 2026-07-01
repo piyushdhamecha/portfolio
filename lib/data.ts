@@ -24,6 +24,8 @@ import spreaddImage from "@/public/spreadd.png";
 import publicPoll from "@/public/public-poll.png";
 import finCast from "@/public/fin-cast.png";
 import weatherApp from "@/public/weather-app.png";
+import foodCourtHq from "@/public/foodcourthq.png";
+import tailorMate from "@/public/tailormate.png";
 
 import blossomLogo from '@/public/blossom_educational_logo.png'
 import ghplLogo from '@/public/gowrie_healthcare_private_ltd_logo.png'
@@ -94,6 +96,22 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "FoodCourtHQ",
+    description:
+      "The all-in-one operating system for modern food courts. Multi-tenant platform for owners and shop tenants to onboard shops, build menus, generate QR codes, and offer seamless customer ordering.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind"],
+    imageUrl: foodCourtHq,
+    url: "https://foodcourthq.com/",
+  },
+  {
+    title: "TailorMate",
+    description:
+      "Mobile app for tailoring shops to manage orders, customer measurements, invoicing, and task tracking. Used by thousands of boutiques across India and abroad.",
+    tags: ["React Native", "Mobile App", "Node.js", "MongoDB"],
+    imageUrl: tailorMate,
+    url: "https://www.tailormateapp.com/",
+  },
   {
     title: "Spreadd",
     description:
